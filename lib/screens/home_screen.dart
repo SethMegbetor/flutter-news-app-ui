@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/bottom_nav_bar.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -7,34 +9,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.black.withAlpha(100),
-        items: [
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.home),
-              ),
-              label: "Home"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.search),
-              ),
-              label: "Search"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.person),
-              ),
-              label: "Profile"),
-        ],
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.white,
+          ),
+        ),
       ),
+      bottomNavigationBar: const BottomNavBar(index: 0),
       body: Container(),
     );
   }

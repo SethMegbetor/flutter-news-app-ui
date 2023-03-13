@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         HomeScreen.routeName:(context) => const HomeScreen(),
         DiscoverScreen.routeName:(context) => const DiscoverScreen(),
         ArticleScreen.routeName:(context) => const ArticleScreen(),
+        ProfileScreen.routeName:(context) => const ProfileScreen(),
       },
     );
   }

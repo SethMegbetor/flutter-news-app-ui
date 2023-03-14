@@ -39,7 +39,7 @@ class Article extends Equatable {
           "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
       category: "Gender",
       imageUrl:
-          "https://images.unsplash.com/photo-1678697644426-90f804b47dc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
+          "https://images.unsplash.com/photo-1678644897769-8eeaa24b1980?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4OHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
       views: 342,
       createdAt: DateTime.now().subtract(const Duration(hours: 5)),
     ),
